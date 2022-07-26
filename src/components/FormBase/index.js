@@ -4,7 +4,7 @@ import SelectField from '../SelectField';
 import TextField from '../TextField';
 import './FormBase.css';
 
-const FormBase = () => {
+const FormBase = (props) => {
 
     const times = [
         "HORDA", "ALIANÇA"
@@ -17,7 +17,7 @@ const FormBase = () => {
 
     const onSave = (evento) =>{
         evento.preventDefault();
-        console.log('form submetido: ', nome, cargo, imagem, time);
+        props.aoIntegranteCadastrado({nome,cargo,imagem,time})
     }
 
     return (
