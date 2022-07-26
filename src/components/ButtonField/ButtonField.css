@@ -1,0 +1,16 @@
+.field-button{
+    background-color: #6278F7;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 32px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 32px 0;
+}
+
+.field-button:hover{
+    color: #95FFD4;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.6);
+}
