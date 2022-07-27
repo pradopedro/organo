@@ -12,7 +12,7 @@ const Footer = () => {
                 <img src="/images/logo.png" alt="Logo" />
             </div>
             <div className='footer-text'>
-                <p>Desenvolvido por Alura</p>
+                <p>Desenvolvido por Pedro Prado</p>
             </div>
         </footer>
     );

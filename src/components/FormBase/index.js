@@ -5,11 +5,12 @@ import TextField from '../TextField';
 import './FormBase.css';
 
 const FormBase = (props) => {
+    
 
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
     const [imagem, setImagem] = useState('');
-    const [time, setTime] = useState('Aliança');
+    const [time, setTime] = useState('');
     const [raca, setRaca] = useState('');
     const [racasAtual, setRacasAtual] = useState([]);
 
@@ -23,10 +24,10 @@ const FormBase = (props) => {
         setNome('');
         setCargo('');
         setImagem('');
-        setTime('Aliança');
+        setTime('');
+        setRaca('');
+        setRacasAtual([])
     }
-
-    
 
     return (
         <section className="FormBase">
@@ -35,7 +36,7 @@ const FormBase = (props) => {
                 <TextField valor={nome} aoAlterado={valor => setNome(valor)} required={true} label="Username" placeholder="Digite seu nome..." />
                 <SelectField valor={time} aoAlterado={valor => {
                     setTime(valor)
-                    time === "Horda"? setRacasAtual(props.racasA)  : setRacasAtual(props.racasH)
+                    time === "Horda"? setRacasAtual(props.racasA)  : setRacasAtual(props.racasH) 
                 }
                 } required={true} label="Facção" itens={props.times} />
                 <SelectField valor={raca} aoAlterado={valor => setRaca(valor)} required={true} label="Raça" itens={racasAtual} />

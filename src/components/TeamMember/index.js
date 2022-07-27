@@ -3,7 +3,7 @@ import './TeamMember.css'
 const TeamMember = ({nome, imagem, cargo,color,raca}) => {
     return (
         <div className='integrante-card'>
-            <div className='cabecalho'>
+            <div className='cabecalho' style={{backgroundColor: color}}>
                 <img src={imagem} alt={nome}/>
             </div>
             <div className='rodape'>

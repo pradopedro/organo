@@ -7,7 +7,7 @@ const Team = (props) => {
         <section className="team-section" style={{ backgroundColor: props.secundaria }}>
             <h3 style={{ borderColor: props.primaria }}>{props.nome}</h3>
             <div className='integrantes'>
-            {props.integrantes.map( integrante => <TeamMember raca={integrante.raca} color={props.primaria} key={integrante.nome} nome={integrante.nome} cargo={integrante.cargo} imagem={integrante.imagem}/> )}
+            {props.integrantes.map( integrante => <TeamMember  color={props.primaria} key={integrante.nome} nome={integrante.nome} cargo={integrante.cargo} imagem={integrante.imagem} raca={integrante.raca}/> )}
             </div>
         </section>
     );

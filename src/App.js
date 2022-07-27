@@ -62,7 +62,7 @@ function App() {
           nome={time.nome}
           primaria={time.primaria}
           secundaria={time.secundaria}
-          integrantes={integrantes.filter(integrante => integrante.time == time.nome)} />)}
+          integrantes={integrantes.filter(integrante => integrante.time === time.nome)} />)}
       <Footer />
     </div>
 
